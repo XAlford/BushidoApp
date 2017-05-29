@@ -17,12 +17,15 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class Login extends AppCompatActivity implements View.OnClickListener {
 
-    private Button mRegBtn;
-    private EditText mEmailText;
-    private EditText mPassword;
-    private TextView mSignUp;
+    private Button mSignBtn;
+
+    private EditText mSignEmail;
+
+    private EditText mSignPassword;
+
+    private TextView mBackToRegister;
 
     private ProgressDialog mProgressDialog;
 
@@ -32,34 +35,44 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        mProgressDialog = new ProgressDialog(this);
+        setContentView(R.layout.activity_login);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
 
         if (mFirebaseAuth.getCurrentUser() != null) {
+
+
+            //profile
+
             finish();
-            startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+
+            startActivity(new Intent(getApplication(), ProfileActivity.class));
+
         }
 
 
-        mRegBtn = (Button) findViewById(R.id.REG_BTN);
-        mEmailText = (EditText) findViewById(R.id.REG_EMAIL);
-        mPassword = (EditText) findViewById(R.id.REG_PASSWORD);
-        mSignUp = (TextView) findViewById(R.id.Sign_In_Link);
+        mSignBtn = (Button) findViewById(R.id.SIGN_IN_BTN);
 
-        mRegBtn.setOnClickListener(this);
-        mSignUp.setOnClickListener(this);
+        mSignEmail = (EditText) findViewById(R.id.SIGN_EMAIL);
+
+        mSignPassword = (EditText) findViewById(R.id.SIGN_PASSWORD);
+
+        mBackToRegister = (TextView) findViewById(R.id.REG_LINK);
+
+        mSignBtn.setOnClickListener(this);
+
+        mBackToRegister.setOnClickListener(this);
+
+        mProgressDialog = new ProgressDialog(this);
 
 
 
 
     }
 
-    private void registerUser() {
-        String email = mEmailText.getText().toString().trim();
-        String password = mPassword.getText().toString().trim();
+    private void loginUser(){
+        String email = mSignEmail.getText().toString().trim();
+        String password = mSignPassword.getText().toString().trim();
 
         if (TextUtils.isEmpty(email)){
             //email is empty
@@ -81,50 +94,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         mProgressDialog.setMessage("WELCOME ABOARD");
-
         mProgressDialog.show();
 
-        mFirebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        mFirebaseAuth.signInWithEmailAndPassword(email,password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 mProgressDialog.dismiss();
 
-
                 if (task.isSuccessful()) {
+                    finish();
 
-                    if (mFirebaseAuth.getCurrentUser() != null) {
-                        finish();
-                        startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
-                    }
-
-                    Toast.makeText(MainActivity.this, "EUREKA, You Registered Successfully!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplication(), ProfileActivity.class));
 
                 }else{
 
-                    Toast.makeText(MainActivity.this, "Something not quite right, Lets try something else", Toast.LENGTH_SHORT).show();
-
-
-
+                    Toast.makeText(Login.this, "Something not quite right, Lets try something else", Toast.LENGTH_SHORT).show();
                 }
 
             }
         });
 
-
-
     }
+
 
     @Override
     public void onClick(View v) {
 
-        if (v == mRegBtn) {
-            registerUser();
+        if (v == mSignBtn) {
+            loginUser();
         }
 
-        if (v == mSignUp) {
-            //open login activity
-            startActivity(new Intent(this,Login.class));
+        if (v == mBackToRegister) {
+            finish();
+            startActivity(new Intent(this, MainActivity.class));
         }
 
     }
+
+
 }

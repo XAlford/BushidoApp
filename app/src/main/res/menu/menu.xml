@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/profile"
+        android:title="PROFILE"
+        android:icon="@drawable/ic_person_black_24dp"/>
+    <item
+        android:id="@+id/projects"
+        android:title="PROJECT"
+        android:icon="@drawable/ic_work_black_24dp"/>
+    <item
+        android:id="@+id/nearby"
+        android:title="NEARBY"
+        android:icon="@drawable/ic_location_on_black_24dp"/>
+
+
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:state_pressed="true"
+              android:drawable="@android:color/white"
+              android:title="pressed"/>
+        <item android:drawable="@android:color/transparent"
+              android:title="transparent"/>
+    </selector>
+
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:state_checked="false"
+              android:title="not_pressed"/>
+        <item android:color="@android:color/white"
+              android:title="coloured"/>
+    </selector>
+
+
+    <ripple xmlns:android="http://schemas.android.com/apk/res/android"
+            android:color="@android:color/white">
+    </ripple>
+
+</menu>

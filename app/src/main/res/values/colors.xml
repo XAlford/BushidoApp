@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#00bfa5</color>
+    <color name="colorPrimaryDark">#009688</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="radio_color">#fff</color>
+    <color name="miami_dark">#E91E63</color>
+    <color name="miami_primary">#F44336</color>
+    <color name="miami_accent">#C2185B</color>
+
+    <color name="ninja_dark">#1B5E20</color>
+    <color name="ninja_primary">#81C784</color>
+    <color name="ninja_accent">#7CB342</color>
+
+
+
+
+
+
+
 </resources>

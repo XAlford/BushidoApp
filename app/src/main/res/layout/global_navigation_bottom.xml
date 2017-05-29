@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.BottomNavigationView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_navigation"
+    app:itemTextColor="@color/radio_color"
+    app:itemIconTint="@color/radio_color"
+    app:itemBackground="@color/colorPrimary"
+    android:layout_alignParentBottom="true"
+
+    app:menu="@menu/menu"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+</android.support.design.widget.BottomNavigationView>
+
+
+

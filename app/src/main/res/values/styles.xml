@@ -1,11 +1,47 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="AppTheme.Miami" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/miami_dark</item>
+        <item name="colorPrimary">@color/miami_primary</item>
+        <item name="colorAccent">@color/miami_accent</item>
+    </style>
+
+    <style name="AppTheme.Ninja" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/ninja_accent</item>
+        <item name="colorPrimary">@color/ninja_primary</item>
+        <item name="colorAccent">@color/ninja_dark</item>
+
+
+
+
+    </style>
+
+
+    <style name="BottomNavigation">
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="MyRadioButton">
+        <item name="colorControlNormal">@color/radio_color</item>
+        <item name="colorControlActivated">@color/radio_color</item>
+    </style>
+
 
 </resources>

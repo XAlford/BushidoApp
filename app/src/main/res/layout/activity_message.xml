@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_background"
+    tools:context="com.alford.bushidoapp.MessageActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/MESSENGER"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#00bfa5"
+        android:padding="5dp"
+        android:id="@+id/relativeLayout">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EDITOR"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+            android:background="#00bfa5"
+            android:padding="12dp"
+
+
+
+            android:layout_toStartOf="@+id/SEND_BTN"
+            android:layout_toLeftOf="@+id/SEND_BTN"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEND"
+            android:id="@+id/SEND_BTN"
+            android:paddingRight="16dp"
+            android:drawableTint="@android:color/white"
+            android:textColor="#fff"
+
+
+            android:drawableRight="@drawable/ic_email_black_24dp"
+
+
+            android:background="#00bfa5"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "819185664350",
+    "firebase_url": "https://bushidoapp-bc3ac.firebaseio.com",
+    "project_id": "bushidoapp-bc3ac",
+    "storage_bucket": "bushidoapp-bc3ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819185664350:android:e957edb0252cf65c",
+        "android_client_info": {
+          "package_name": "com.alford.bushidoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819185664350-c11d2sv0hq7ua6a7mhvrcb2b5np61bvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF4xGmU-dOLNp3IpgMwpn6ee-yvnhyi6I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

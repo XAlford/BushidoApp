@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:id="@+id/REG_CONTAINER"
+    android:orientation="vertical"
+    tools:context="com.alford.bushidoapp.RegisterProjectWithFirebase">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EDIT_TEXT_CONTAIN"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:padding="10dp"
+            android:id="@+id/project_name"
+            android:drawableLeft="@drawable/ic_work_black_24dp"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            android:background="#00bfa5"
+
+            android:layout_height="wrap_content"
+            android:hint="PROJECT NAME"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/DISCIP_EDITTEXT"
+
+            android:background="#00bfa5"
+
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            android:drawableLeft="@drawable/ic_fitness_center_black_24dp"
+
+
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+
+            android:textColorHint="@android:color/white"
+            android:hint="DISCIPLINE"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/SET_DATE"
+
+            android:background="#00bfa5"
+
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+
+
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+
+            android:textColorHint="@android:color/white"
+            android:hint="DATE"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+
+            android:layout_marginTop="16dp"
+            android:drawableTint="@android:color/white"
+
+            android:drawableLeft="@drawable/ic_build_black_24dp"
+            android:drawablePadding="16dp"
+            android:id="@+id/PROJ_DESCRIPT"
+
+
+
+            android:background="#00bfa5"
+
+
+            android:padding="10dp"
+
+            android:textColorHint="@android:color/white"
+            android:lines="5"
+            android:maxLines="10"
+            android:gravity="bottom"
+            android:layout_height="wrap_content"
+            android:hint="WHAT I'LL BE  DOING"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_group"
+            android:layout_marginTop="16dp"
+            >
+
+            <RadioButton
+                android:id="@+id/MENT_RADIO"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="MENTOR"
+                android:textColor="@android:color/white"
+                android:buttonTint="@color/radio_color"
+
+
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:id="@+id/PRENTICE_RADIO"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="APPRENTICE"
+                android:textSize="18sp"
+                android:buttonTint="@color/radio_color"
+                />
+
+
+        </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:text="create project"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+
+            android:background="#FF5252"
+            android:textColor="@android:color/white"
+            android:id="@+id/REG_PROJ_WITH_FIREBASE"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <include layout="@layout/global_navigation_bottom"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"/>
+
+
+
+
+
+
+</RelativeLayout>
