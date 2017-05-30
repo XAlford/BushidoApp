@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Bushido</string>
+    <string name="app_name">BushidoApp</string>
     <string name="title_activity_project_view">ProjectVIew</string>
     <string name="logout">LOG OUT</string>
     <string name="chat">CHAT</string>
