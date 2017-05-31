@@ -3,6 +3,8 @@ Bushido is a pretty ambitious application. Essentially, Im trying to create a pl
 
 Eventually BushidoApp will do the same thing, give individuals who are seeking mentorship the oppurtunity to learn hard skills from masters of a given trade through requesting an oppurtunity to work on an ongoing project or start a new one .
 
+**BushidoApp Is still pretty alpha.** I primarily worked on Bushido app for about a week and a half as part of a final project.Im still working on it as we speak(or, I type). I really believe in the concept behind it. Feel free to reach out with any questions or suggestions. Thanks.
+
 ## Would you look at that? My first LIVE Android Application
 
 ![Alt text](images/PlayStore.png)
