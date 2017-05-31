@@ -20,9 +20,9 @@ Eventually BushidoApp will do the same thing, give individuals who are seeking m
 * Object Oriented concepts
 * Google Authentications and API Client
 * Reverse Geocoding
-* Firebase for data persistence*
-* Firebase for chat persistence*
-* Firebases native RecyclerView Adapter*
+* Firebase for data persistence
+* Firebase for chat persistence
+* Firebases native RecyclerView Adapter
 
 
 
