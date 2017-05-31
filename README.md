@@ -3,17 +3,17 @@ Bushido is a pretty ambitious application. Essentially, Im trying to create a pl
 
 Eventually #BushidoApp will do the same thing, give individuals who are seeking mentorship the oppurtunity to learn hard skills from masters of a given trade through requesting an oppurtunity to work on an ongoing project or start a new one .
 
-##Would you look at that? My first LIVE Android Application
+## Would you look at that? My first LIVE Android Application
 
 ![Alt text](images/PlayStore.png)
 
 
-#Oh look Chat!
+## Oh look Chat!
 ![Alt text](images/chat.png)
 
 
 
-#Create your own projects and post them so mentors or mentees can collaborate!
+## Create your own projects and post them so mentors or mentees can collaborate!
 ![Alt text](images/creation.png)
 
 
