@@ -18,11 +18,11 @@ Eventually BushidoApp will do the same thing, give individuals who are seeking m
 
 ### BushidoApp Utilization
 * Object Oriented concepts
-* Google Authentications
-*G
-*Firebase for data persistence*
-*Firebase for chat persistence*
-*Firebases native RecyclerView Adapter*
+* Google Authentications and API Client
+* Reverse Geocoding
+* Firebase for data persistence*
+* Firebase for chat persistence*
+* Firebases native RecyclerView Adapter*
 
 
 
