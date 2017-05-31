@@ -16,6 +16,16 @@ Eventually BushidoApp will do the same thing, give individuals who are seeking m
 ## Create your own projects and post them so mentors or mentees can collaborate!
 ![Alt text](images/creation.png)
 
+### BushidoApp Utilization
+* Object Oriented concepts
+* Google Authentications
+*G
+*Firebase for data persistence*
+*Firebase for chat persistence*
+*Firebases native RecyclerView Adapter*
+
+
+
 
 
 
